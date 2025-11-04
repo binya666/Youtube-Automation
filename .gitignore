@@ -62,14 +62,20 @@ Frontend/dist/
 *.log
 
 # YouTube API credentials and tokens
-credentials.json
-token.pickle
+backend/config/credentials.json
+backend/config/token.pickle
 client_secrets.json
 
 # Logs and data files
-downloaded_log.json
-uploaded_log.json
-video_urls.xlsx
+backend/data/downloaded_log.json
+backend/data/video_urls.xlsx
+backend/logs/*.log
+
+# Output directories (keep structure but ignore contents)
+backend/output/uploaded/*
+backend/output/videos/*
+!backend/output/uploaded/.gitkeep
+!backend/output/videos/.gitkeep
 
 # Temporary files
 *.tmp
